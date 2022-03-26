@@ -1,18 +1,9 @@
 local fn = vim.fn
-require('packer').init({
-  git = {
-    default_url_format = "https://hub.xn--p8jhe.tw/%s"
-  }
-})
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
   PACKER_BOOTSTRAP = fn.system {
-    "git",
-    "clone",
-    "--depth",
-    "1",
-    "https://github.com/wbthomason/packer.nvim",
+    "git","clone","--depth","1","https://hub.fastgit.xyz/wbthomason/packer.nvim",
     install_path,
   }
   print "Installing packer close and reopen Neovim..."
@@ -33,8 +24,11 @@ if not status_ok then
   return
 end
 
--- Have packer use a popup window
 packer.init {
+  git = {
+  clone_timeout = 288, default_url_format = "https://hub.fastgit.xyz/%s" },
+  max_jobs = 30,
+  -- Have packer use a popup window
   display = {
     open_fn = function()
       return require("packer.util").float { border = "rounded" }
@@ -66,6 +60,7 @@ return packer.startup(function(use)
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
+  use "tomasr/molokai"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
