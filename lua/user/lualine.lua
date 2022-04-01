@@ -1,4 +1,7 @@
-local lualine = require 'lualine'
+local status_ok, lualine = pcall(require, "lualine")
+if not status_ok then
+	return
+end
 
 -- Color table for highlights
 local colors = {
@@ -28,6 +31,7 @@ local conditions = {
 -- Config
 local config = {
   options = {
+		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
     -- Disable sections and component separators
     component_separators = "",
     section_separators = "",
