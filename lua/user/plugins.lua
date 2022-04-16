@@ -3,7 +3,7 @@ local fn = vim.fn
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
   PACKER_BOOTSTRAP = fn.system {
-    "git","clone","--depth","1","https://hub.fastgit.xyz/wbthomason/packer.nvim",
+    "git","clone","--depth","1","https://hub.xn--p8jhe.tw/wbthomason/packer.nvim",
     install_path,
   }
   print "Installing packer close and reopen Neovim..."
@@ -26,7 +26,7 @@ end
 
 packer.init {
   git = {
-  clone_timeout = 288, default_url_format = "https://hub.fastgit.xyz/%s" },
+  clone_timeout = 288, default_url_format = "https://hub.xn--p8jhe.tw/%s" },
   max_jobs = 30,
   -- Have packer use a popup window
   display = {
