@@ -43,7 +43,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  use "numToStr/Comment.nvim" -- Easily comment stuff
+  -- use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
   use "akinsho/bufferline.nvim"
@@ -57,13 +57,21 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "dstein64/vim-startuptime"
+
+  -- IME switch plugins
   use {
-    "davidgranstrom/nvim-markdown-preview",
-    load_file = true,
-    ft = {"markdown"},
-    after = "impatient.nvim"
+    "Neur1n/neuims",
+    -- run = "IMSToggle",
   }
-  --use "iamcco/markdown-preview.nvim"
+
+  -- markdown plugins
+  -- use {
+  --   "davidgranstrom/nvim-markdown-preview",
+  --   load_file = true,
+  --   ft = {"markdown"},
+  --   after = "impatient.nvim"
+  -- }
+  use "iamcco/markdown-preview.nvim"
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
