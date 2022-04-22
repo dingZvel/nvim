@@ -71,8 +71,11 @@ return packer.startup(function(use)
   --   ft = {"markdown"},
   --   after = "impatient.nvim"
   -- }
-  use "iamcco/markdown-preview.nvim"
-
+  use {
+    'iamcco/markdown-preview.nvim',
+    ft = 'markdown',
+    run = 'cd app && yarn install'
+  }
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
