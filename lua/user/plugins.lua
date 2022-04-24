@@ -76,6 +76,7 @@ return packer.startup(function(use)
     run = function() vim.fn['mkdp#util#install']() end,
     ft = 'markdown'
   }
+
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
