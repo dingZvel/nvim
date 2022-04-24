@@ -73,8 +73,8 @@ return packer.startup(function(use)
   -- }
   use {
     'iamcco/markdown-preview.nvim',
-    ft = 'markdown',
-    run = 'cd app && yarn install'
+    run = function() vim.fn['mkdp#util#install']() end,
+    ft = 'markdown'
   }
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
