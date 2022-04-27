@@ -41,8 +41,14 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts)
 
 -- Core operating
-keymap("n", "Y","y$",opts)
 keymap("n", "<leader>so", ":source %<CR>", {silent=false})
+keymap("n", "Y","y$",opts)
+keymap("v", "<BS>",'"_d',opts)
+keymap("n", "x",'"_x',opts)
+keymap("v", "x",'"_x',opts)
+keymap("v", "c",'"_c',opts)
+keymap("n", "c",'"_c',opts)
+keymap("v", "p", '"_dP', opts)
 
 -- Insert --
 -- Press jk or kj fast to enter
@@ -57,7 +63,6 @@ keymap("v", ">", ">gv", opts)
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
-keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --
 -- Move text up and down
