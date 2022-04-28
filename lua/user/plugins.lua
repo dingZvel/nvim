@@ -26,7 +26,9 @@ end
 
 packer.init {
   git = {
-  clone_timeout = 288, default_url_format = "https://hub.xn--p8jhe.tw/%s" },
+    clone_timeout = 288,
+    -- default_url_format = "https://hub.xn--p8jhe.tw/%s"
+  },
   max_jobs = 30,
   -- Have packer use a popup window
   display = {
