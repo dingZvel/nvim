@@ -36,10 +36,10 @@ configs.setup {
     enable_autocmd = false,
   },
 }
--- 开启 Folding
+-- enable Folding
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
--- 默认不要折叠
+-- not to fold by default
 -- https://stackoverflow.com/questions/8316139/how-to-set-the-default-to-unfolded-when-you-open-a-file
 vim.wo.foldlevel = 99
 
