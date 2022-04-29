@@ -47,7 +47,6 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
@@ -59,6 +58,10 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "dstein64/vim-startuptime"
+  use {
+    "kyazdani42/nvim-tree.lua",
+    commit = "74ae97098f37f769a52716d9b89246eefa96d76e",
+  }
 
   -- IME switch plugins
   use {
