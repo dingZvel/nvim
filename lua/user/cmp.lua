@@ -123,9 +123,14 @@ cmp.setup {
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
   },
+  view = {
+    entries = {
+      name = "custom",
+      selection_order = "near_cursor",
+    }
+  },
   -- documentation = { border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }, },
   experimental = {
     ghost_text = true,
-    native_menu = false,
   },
 }
