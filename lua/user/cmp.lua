@@ -106,6 +106,7 @@ cmp.setup {
         cmp_tabnine = "[TN]",
         buffer = "[Buffer]",
         path = "[Path]",
+        look = "[Dict]"
       })[entry.source.name]
       return vim_item
     end,
@@ -116,6 +117,15 @@ cmp.setup {
     { name = "cmp_tabnine" },
     { name = "buffer" },
     { name = "path" },
+    {
+      name = 'look',
+      keyword_length = 2,
+      option = {
+        convert_case = true,
+        loud = true
+        --dict = '/usr/share/dict/words'
+      }
+    },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
