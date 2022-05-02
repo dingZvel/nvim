@@ -123,6 +123,7 @@ cmp.setup {
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
   },
+  -- Custom menu direction
   view = {
     entries = {
       name = "custom",
