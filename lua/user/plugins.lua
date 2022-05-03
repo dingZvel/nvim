@@ -131,6 +131,7 @@ return packer.startup(function(use)
 
   -- Others
   use "wakatime/vim-wakatime"
+  use "uga-rosa/translate.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

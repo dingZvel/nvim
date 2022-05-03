@@ -71,6 +71,16 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
+-- Translate --
+keymap("n", "<leader>tsc", ":<c-u>Translate ZH -source=EN -output=floating<cr>", opts)
+keymap("x", "<leader>tsc", ":Translate ZH -source=EN -output=floating<cr>", opts)
+keymap("n", "<leader>tse", ":<c-u>Translate EN -source=ZH -output=floating<cr>", opts)
+keymap("x", "<leader>tse", ":Translate EN -source=ZH -output=floating<cr>", opts)
+keymap("n", "<leader>trc", ":<c-u>Translate ZH -source=EN -output=replace<cr>", opts)
+keymap("x", "<leader>trc", ":Translate ZH -source=EN -output=replace<cr>", opts)
+keymap("n", "<leader>tre", ":<c-u>Translate EN -source=ZH -output=replace<cr>", opts)
+keymap("x", "<leader>tre", ":Translate EN -source=ZH -output=replace<cr>", opts)
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
