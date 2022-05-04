@@ -48,8 +48,8 @@ for k, v in pairs(options) do
 end
 
 
--- wsl yanking to windows clipboard from nvim
-if vim.fn.has "wsl" == 1 then
+-- wsl and windows yanking to windows clipboard from nvim
+if vim.fn.has "wsl" == 1 or vim.fn.has "win32" == 1 or vim.fn.has "win64" == 1 then
   vim.g.clipboard = {
     name = "win32yank-wsl",
     copy = {
