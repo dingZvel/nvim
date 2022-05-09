@@ -48,7 +48,8 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye"
+  -- use "moll/vim-bbye"
+  use 'famiu/bufdelete.nvim'
   use "nvim-lualine/lualine.nvim"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
