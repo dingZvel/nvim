@@ -1,4 +1,8 @@
-vim.g.mkdp_auto_close = 1
+local opts = { noremap = true, silent = true }
+local keymap = vim.api.nvim_set_keymap
+keymap("n", "<leader>m", ":MarkdownPreviewToggle <CR>", opts)
+
+
 -- set to 1, nvim will open the preview window after entering the markdown buffer
 -- default: 0
 vim.g.mkdp_auto_start = 0
