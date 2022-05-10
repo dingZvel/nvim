@@ -4,7 +4,7 @@ Each video will be associated with a branch so checkout the one you are interest
 
 ## Try out this config
 
-Make sure to remove or move your current `nvim` directory
+Make sure to back up and remove your current `nvim` directory
 
 **IMPORTANT** Requires [Neovim v0.6.0](https://github.com/neovim/neovim/releases/tag/v0.6.0) or [Nightly](https://github.com/neovim/neovim/releases/tag/nightly). 
 ```
@@ -23,7 +23,7 @@ Open `nvim` and enter the following:
 :checkhealth
 ```
 
-You'll probably notice you don't have support for copy/paste also that python and node haven't been setup
+You'll probably notice you don't have support for copy/paste also that python and node haven't been set up
 
 So let's fix that
 
