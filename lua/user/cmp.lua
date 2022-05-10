@@ -104,6 +104,7 @@ cmp.setup {
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
         cmp_tabnine = "[TN]",
+        emoji = "[Emoji]",
         buffer = "[Buffer]",
         path = "[Path]",
         look = "[Dict]"
@@ -116,6 +117,7 @@ cmp.setup {
     { name = "luasnip" },
     { name = "cmp_tabnine" },
     { name = "buffer" },
+    { name = 'emoji' },
     { name = "path" },
     {
       name = 'look',

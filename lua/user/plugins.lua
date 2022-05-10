@@ -95,7 +95,9 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp" -- lsp completions
+  use "hrsh7th/cmp-emoji"  -- emoji completions
   use "octaltree/cmp-look" -- dict completions
+  -- TODO: add for Windows
   use {
     'tzachar/cmp-tabnine',
     run = './install.sh'
