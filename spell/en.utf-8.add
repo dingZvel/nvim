@@ -5,5 +5,4 @@ treesitter
 checkhealth
 sudo
 pacman
-#ithub
-github/!
+github
