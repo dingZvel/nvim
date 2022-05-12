@@ -136,6 +136,13 @@ cmp.setup {
   window = {
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
+    -- documentation = "native",
+    -- documentation = {
+    --   border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    -- },
+    -- completion = {
+    --   border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    -- },
   },
   -- Custom menu direction
   view = {
@@ -144,7 +151,6 @@ cmp.setup {
       selection_order = "near_cursor",
     }
   },
-  -- documentation = { border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }, },
   experimental = {
     ghost_text = true,
   },
