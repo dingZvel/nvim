@@ -115,10 +115,10 @@ cmp.setup {
   sources = {
     { name = "nvim_lsp" },
     { name = "luasnip" },
-    { name = "cmp_tabnine" },
     { name = "buffer" },
-    { name = 'emoji' },
+    { name = "cmp_tabnine" },
     { name = "path" },
+    { name = 'emoji' },
     {
       name = 'look',
       keyword_length = 2,
