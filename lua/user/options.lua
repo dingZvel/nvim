@@ -37,8 +37,8 @@ local options = {
   spelllang = "en,cjk",                    -- make East Asian characters excluded from spell checking
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  -- guifont = "JetBrainsMono NF:h17",        -- the font used in graphical neovim applications
-  guifont = "FiraCode NF:h17",             -- the font used in graphical neovim applications
+  -- guifont = "JetBrainsMono NF:h17",               -- the font used in graphical neovim applications
+  guifont = "FiraCode NF:h17",               -- the font used in graphical neovim applications
   confirm = true,                          -- Ask for confirmation when handling unsaved or read-only files
 }
 
