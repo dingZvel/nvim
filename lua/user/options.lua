@@ -39,6 +39,7 @@ local options = {
   sidescrolloff = 8,
   -- guifont = "JetBrainsMono NF:h17",        -- the font used in graphical neovim applications
   guifont = "FiraCode NF:h17",             -- the font used in graphical neovim applications
+  confirm = true,                          -- Ask for confirmation when handling unsaved or read-only files
 }
 
 vim.opt.shortmess:append "c"
