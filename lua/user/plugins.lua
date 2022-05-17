@@ -133,10 +133,10 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim"
 
   -- Browser integration
-  use {
-    'glacambre/firenvim',
-    run = function() vim.fn['firenvim#install'](0) end
-  }
+  -- use {
+  --   'glacambre/firenvim',
+  --   run = function() vim.fn['firenvim#install'](0) end
+  -- }
 
   -- Others
   use "wakatime/vim-wakatime"
