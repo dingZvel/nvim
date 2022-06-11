@@ -28,6 +28,8 @@ vim.cmd [[
     autocmd!
     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
   augroup end
+
+  autocmd BufWritePost ~/Downloads/suckless/dwm/dwmblocks/config.h !cd ~/Downloads/suckless/dwm/dwmblocks; sudo make install && { killall -q dwmblocks;setsid dwmblocks & }
 ]]
 
 -- Autoformat
