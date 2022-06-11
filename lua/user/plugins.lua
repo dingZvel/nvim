@@ -66,10 +66,10 @@ return packer.startup(function(use)
   }
 
   -- IME switch plugins
-  use {
-    "Neur1n/neuims",
+  -- use {
+  --   "Neur1n/neuims",
     -- run = "IMSToggle",
-  }
+  -- }
 
   -- markdown plugins
   -- use {
