@@ -121,3 +121,7 @@ opt.wrap = false -- Disable line wrap
 
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
+
+if vim.g.neovide then
+    vim.o.guifont = "FiraCode Nerd Font:h14"
+end
